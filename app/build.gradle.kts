@@ -14,7 +14,7 @@ android {
     defaultConfig {
         applicationId = "com.shiwa.onearun"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -64,9 +64,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
 
-    implementation("com.hivemq:hivemq-mqtt-client:1.4.0")
-    implementation("org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.5")
-    implementation("org.eclipse.paho:org.eclipse.paho.android.service:1.1.1")
+    implementation(libs.hivemq.mqtt.client)
 
 
     testImplementation(libs.junit)

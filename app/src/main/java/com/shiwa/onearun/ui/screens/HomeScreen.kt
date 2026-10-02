@@ -26,9 +26,9 @@ fun HomeScreen(
         topBar = {HomeScreenTopBar()}
     ) { innerPadding ->
         HomeScreenOptions(
-            onStartRaceClick = viewModel.onStartRaceClick,
-            onEnterRaceClick = viewModel.onEnterRaceClick,
-            modifier = Modifier.padding(innerPadding)
+            onStartRaceClick = { viewModel.onStartRaceClick() },
+            onEnterRaceClick = { viewModel.onEnterRaceClick() },
+            modifier = modifier.padding(innerPadding)
         )
     }
 
